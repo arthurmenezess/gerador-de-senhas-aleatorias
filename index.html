@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Senhas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="img/cadeado.icon" />
+    <link href="style-raiz.css" rel="stylesheet" />
+    <link href="style-senha.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+
+            <img height="167" width=190 src="img/cad-logo.png" />
+
+            <h1>Gerador de senhas aleatórias</h1>
+
+            <p>Proteja suas senhas de internet criando senhas fortes e seguras.</p>
+
+            <div id="generate-options" class="hide">
+
+                <div class="form-control">
+                    <label for="qtdeCaracteres">Quantidade de caracteres:</label>
+                    <input type="number" id="passLenght" min="4" max="20" value="6"  />
+                </div>
+
+                <div class="form-control">
+                    <label for="letras">Letras:</label>
+                    <input type="checkbox" id="letter" checked />
+                </div>
+
+                <div class="form-control">
+                    <label for="numeros">Números:</label>
+                    <input type="checkbox" id="number" checked />
+                </div>
+
+                <div class="form-control">
+                    <label for="simbolos">Símbolos:</label>
+                    <input type="checkbox" id="symbols" checked />
+                </div>
+
+                <button id="btnGerarSenha">Gerar senha</button>
+
+            </div>
+
+            <div id="senhaGerada" >
+
+                <p>Aqui está a sua senha:</p>
+                <h4></h4>
+
+                <button id="btnCopiarSenha">Copiar</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
